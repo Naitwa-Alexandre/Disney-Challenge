@@ -17,7 +17,15 @@
 }
 
 .cards {
-  background: red;
+  display: flex;
+  flex-wrap: wrap;
   width: 80%;
+  margin: auto;
   height: 100vh;
+  gap: 2em;
+}
+
+.card {
+  width: 300px;
+  height: 300px;
 }
