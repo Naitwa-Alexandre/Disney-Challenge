@@ -1,8 +1,11 @@
 import React from 'react';
 
-const Card = () => {
+const Card = ({ imageUrl, name }) => {
   return <article>
-    Single Card
+    <img src={ imageUrl } alt={ name } />
+    <div>
+      <h3>{ name }</h3>
+    </div>
   </article>;
 };
 

@@ -1,3 +1,4 @@
+import { Pagination } from '@mui/material';
 import './App.css';
 import Cards from './components/Cards';
 import SearchBar from './components/SearchBar';

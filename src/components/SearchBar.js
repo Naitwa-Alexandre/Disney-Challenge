@@ -12,7 +12,7 @@ const SearchBar = () => {
       <TextField
         className="input"
         type="text"
-        label="e.g Simba"
+        label="e.g Pato Donald"
       />
       <Button
         className="btn"
