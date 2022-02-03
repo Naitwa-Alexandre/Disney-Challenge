@@ -1,13 +1,12 @@
 import './App.css';
+import Cards from './components/Cards';
 import SearchBar from './components/SearchBar';
-import { useGlobalContext } from './context';
 
 function App() {
-  const data = useGlobalContext();
   return (
     <main className="App">
       <SearchBar />
-      <h2>{ data }</h2>
+      <Cards />
     </main>
   );
 }

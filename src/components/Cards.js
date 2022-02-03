@@ -1,7 +1,14 @@
 import React from 'react';
+import { useGlobalContext } from '../context';
 
-export const Cards = () => {
-  return <section>
-    
-  </section>;
+const Cards = () => {
+  const { chars } =  useGlobalContext();
+  
+  if (chars.length) {
+    console.log(chars);
+  }
+  
+  return <div></div>;
 };
+
+export default Cards;

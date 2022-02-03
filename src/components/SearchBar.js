@@ -1,18 +1,27 @@
 import React from 'react';
+import Box from '@mui/material/Box';
+import TextField from '@mui/material/TextField';
+import Button from '@mui/material/Button';
 
 const SearchBar = () => {
-  return <section>
-    <div>
-      <input
+  return <Box
+        className='form-wrapper'
+        component="form"
+        noValidate
+        autoComplete="off">
+      <TextField
+        className="input"
         type="text"
-        placeholder="e.g Mikey Mouse"
+        label="e.g Simba"
       />
-      <input
+      <Button
+        className="btn"
         type="button"
-        value="Buscar"
-      />
-    </div>
-  </section>;
+        variant="outlined"
+      >
+        Buscar
+      </Button>
+  </Box>;
 };
 
 export default SearchBar;
