@@ -39,12 +39,20 @@ const AppProvider = ({ children }) => {
 
   }
 
+  const handleChange = (event, value) => {
+    const from = value === 1 ? 0 : Number(`${value - 1}0`);
+    const to =  Number(`${value}0`);
+
+    setChars(data.slice(from, to));
+  };
+
   return <AppContext.Provider
     value={{
       chars,
       query,
       setQuery,
       handleClick,
+      handleChange,
     }}
   >
     { children }
