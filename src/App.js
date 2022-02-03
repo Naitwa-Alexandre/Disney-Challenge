@@ -1,13 +1,14 @@
 import './App.css';
+import SearchBar from './components/SearchBar';
 import { useGlobalContext } from './context';
 
 function App() {
   const data = useGlobalContext();
   return (
-    <div className="App">
-      <h1>Hello World</h1>
+    <main className="App">
+      <SearchBar />
       <h2>{ data }</h2>
-    </div>
+    </main>
   );
 }
 
