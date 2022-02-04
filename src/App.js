@@ -1,15 +1,22 @@
 import './App.css';
-import Cards from './components/Cards';
-import SearchBar from './components/SearchBar';
-import PaginationOutlined from './components/PaginationOutlined';
+import Home from './pages/Home';
+import CardDetails from './pages/CardDetails';
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route
+} from "react-router-dom";
 
 function App() {
   return (
-    <main className="App">
-      <SearchBar />
-      <Cards />
-      <PaginationOutlined />
-    </main>
+    <Router>
+      <main className="App">
+        <Routes>
+          <Route path="/" element={ <Home /> } />
+          <Route exact path="/:id" element={ <CardDetails /> } />
+        </Routes>
+      </main>
+    </Router>
   );
 }
 
