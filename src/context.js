@@ -50,6 +50,7 @@ const AppProvider = ({ children }) => {
     value={{
       chars,
       query,
+      data,
       setQuery,
       handleClick,
       handleChange,
