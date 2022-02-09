@@ -9,7 +9,12 @@ export default function PaginationOutlined() {
   return (
     <footer>
       <Stack spacing={2}>
-        <Pagination onChange={ handleChange } count={5} variant="outlined" color="primary" />
+        <Pagination
+          onChange={ handleChange }
+          count={5}
+          variant="outlined"
+          color="primary"
+        />
       </Stack>
     </footer>
   );
