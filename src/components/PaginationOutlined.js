@@ -1,7 +1,7 @@
-import * as React from 'react';
-import { useGlobalContext } from '../context';
-import Pagination from '@mui/material/Pagination';
-import Stack from '@mui/material/Stack';
+import * as React from "react";
+import { useGlobalContext } from "../context";
+import Pagination from "@mui/material/Pagination";
+import Stack from "@mui/material/Stack";
 
 export default function PaginationOutlined() {
   const { handleChange } = useGlobalContext();
@@ -10,7 +10,7 @@ export default function PaginationOutlined() {
     <footer>
       <Stack spacing={2}>
         <Pagination
-          onChange={ handleChange }
+          onChange={handleChange}
           count={5}
           variant="outlined"
           color="primary"
